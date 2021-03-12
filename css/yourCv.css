@@ -1,0 +1,37 @@
+html,body,input,a{
+	background-color: #5e6161fd;
+	font-family: Arial;
+	/*padding: 0;
+	margin: 0;*/
+	border: 3px solid black;
+	border-radius: 100px;
+}
+th{
+	text-align: left;
+	font-size: 20px;
+}
+/*
+.personal h1{
+	text-align: left;
+	font-style: arial;
+	font-size: 28px;
+}
+h2 pre{
+	font-style: arial;
+	font-size: 18px;
+}
+*/
+body .container,.qualifications,.advanced,.languages,.computer,.other,.job{
+	padding: 0;
+	margin: 30px;
+}
+p,.container .row .personal pre p{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18px;
+
+}
+img{
+	width: 280px;
+	height: 400px;
+}

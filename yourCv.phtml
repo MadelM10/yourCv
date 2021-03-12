@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    	<!-- css &js files -->
+	<link rel="stylesheet" type="text/css" href="css/yourCv.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- the page contain all items of CV like any body -->
+	<div class="container">
+		<div class="row">
+			<div class="col-10 personal">
+				<h1>PERSONAL DATA</h1><br><hr>
+                <pre><p>
+                <form action="cv.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="birth">Date of Birth:</label>
+                    <input type="date" id="birth" name="birth"><br><br>
+                    <label for="nationality">Nationality:</label>
+                    <input type="text" id="nationality" name="nationality"><br><br>
+                    <label for="military">Military Service:</label>
+                    <input type="text" id="military" name="military"><br><br>
+                    <label for="driving">Driving Service:</label>
+                    <input type="text" id="driving" name="driving"><br><br>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address"><br><br>
+                    <label for="telephone">Tel.:</label>
+                    <input type="number" id="telephone" name="telephone"><br><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="image">Image:</label>
+                    <input type="file" id="image" name="image">
+                </p></pre>	
+			</div>	
+		</div>
+    <div class="qualifications">
+		<h1>QUALIFICATIONS</h1><hr>
+		<p><input type="text" id="bachelor" name="bachelor">
+	</div>
+	<div class="advanced">
+		<h1>ADVANCED COURSES</h1><hr>
+        <ul>
+            <li><input type="text" id="course" name="course"></li>
+        </ul>
+	</div>
+	<div class="languages">
+		<h1>LANGUAGES</h1><hr>
+        <ul>
+            <li><input type="text" id="lang" name="lang"></li>
+        </ul>
+	</div>
+	<div class="computer">
+		<h1>COMPUTER SKILLS</h1><hr>
+		<ul>
+            <li><input type="text" id="comp" name="comp"></li>
+        </ul>
+	</div>
+	<div class="other">
+		<h1>OTHER SKILLS</h1><hr>
+		<ul>
+            <li><input type="text" id="other" name="other"></li>
+        </ul>
+	</div>
+	<div class="job">
+		<h1>JOB EXPERIENCE</h1><hr>
+		<ul>
+            <li><input type="text" id="job" name="job"></li>
+        </ul>
+	</div>
+            <input type="submit" value="Create your CV" name="submit">
+            </form>
+            <a href="listCv.php"><input type="button" value="Show List of all CVs"></a>
+    </div>
+</body>
+</html>
+
